@@ -1,5 +1,8 @@
 --[[ init.lua ]]
 
+-- Loading impatient for quick loading
+require('impatient')
+
 -- LEADER
 -- These keybindings need to be defined before the first /
 -- is called; otherwise, it will default to "\"
@@ -26,3 +29,7 @@ vim.cmd [[inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup()
+
+-- Configure indentLine
+vim.g.indentLine_enabled = 1
+vim.g.indentLine_char = '▏'

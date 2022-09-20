@@ -15,5 +15,11 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
   }
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+  use 'Yggdroot/indentLine'
+  use 'lewis6991/impatient.nvim'
 end)
 
