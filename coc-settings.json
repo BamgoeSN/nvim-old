@@ -1,0 +1,6 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": ["rust"],
+
+    "snippets.ultisnips.enable": false,
+    "snippets.textmateSnippetsRoots": ["/home/bamgoesn/.config/Code/User/snippets/"]
+}

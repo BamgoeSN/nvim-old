@@ -21,5 +21,10 @@ return require('packer').startup(function(use)
   }
   use 'Yggdroot/indentLine'
   use 'lewis6991/impatient.nvim'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+  use 'ibhagwan/fzf-lua'
 end)
 
