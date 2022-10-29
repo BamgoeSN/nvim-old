@@ -10,3 +10,6 @@ map('n', 'gr', '<Plug>(coc-references)', {})
 
 -- Fzf keymap
 map('n', '<C-P>', "<cmd>lua require('fzf-lua').files()<CR>", {noremap=true, silent=true})
+
+-- Coc Codeaction
+map('n', '<C-A>', '<Plug>(coc-codeaction-cursor)', {})
